@@ -1,5 +1,5 @@
 
-/* --========== Icon Card Module ============-- */
+/* --====================================== Icon Card Module ========================================-- */
 /* Icon Card Inner Css */
 .icon-card-inner {
     display: flex;
@@ -28,7 +28,7 @@
 
 
 
- /* --======== Title Module =============--*/ 
+ /* --========================================= Title Module =========================================--*/ 
  /* Title css in style one */
 .section-title {
     flex-direction: column;
@@ -114,4 +114,281 @@
 }
 .section-title.two-column .sec-desc .desc {
     margin-bottom: 8px;
+}
+
+
+/* --========================================== Review card Module ======================================-- */
+.review-card {
+    width: 307px;
+    height: 135px;
+    background-color: #D9A14C;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 24px;
+} 
+.review-card .icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+} 
+.card-text:last-child {
+    margin-bottom: 0;
+}
+.review-card .card-text h2 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+.review-card .card-text span {
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.review-card .card-text span {
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+/* --======== Absolute Image Module =============-- */
+.main-img-inner {
+    position: relative;
+    height: 650px;
+}
+.main-img-inner img {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.main-img-inner .top-image {
+    position: absolute;
+    top: 294px;
+    left: 155px;
+    background: rgba(217, 161, 76, 0.15);
+    overflow: hidden;
+}
+.main-img-inner .top-image img {
+    position: relative;
+    margin-top: 35px;
+    margin-left: 31px;
+    z-index: 2;
+}
+
+
+/* --======================================== Fancy Box Module ======================================-- */
+/* --================ Icon Wrapper Utilities style1 =============-- */
+.icon-wrapper {
+    padding-right: 6px; 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.icon-wrapper .icon {
+    width: 65px;
+    height: 65px;
+}
+.icon-wrapper .icon img {
+    transition: all 0.5s ease-out;
+}
+.icon-wrapper.style1 .counter-number-wrapper .counter-number {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 78.2px;
+    color: #ffffff;
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    opacity: 0.3;
+}
+
+ /* --======== Icon Wrapper Utilities style2 =============-- */ 
+ .icon-wrapper.style2  .icon {
+    background-color: #D9A14C;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1px;
+    padding: 8px;
+    flex-shrink: 0;
+} 
+.icon-wrapper.style2 .counter-number-wrapper .counter-number {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #23262D; 
+}
+
+/* --=========================== Fancy Box =====================-- */
+.fancy-card {
+    padding: 40px;
+    border: 1px solid #E3E3E3;
+    transition: all 0.5s ease-out;
+    top: 0;
+    position: relative;
+}
+.fancy-card .fancy-card-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+.fancy-card .content-wrapper {
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+} 
+.fancy-card .content-wrapper  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+.fancy-card  .title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 0;
+    color: #26262c;
+    transition: all 0.6s ease;
+    margin-bottom: 20px;
+} 
+.fancy-card .content .desc {
+    transition: all 0.6s ease;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0;
+    color: #616670;
+}
+.fancy-card .content .read-more {
+    display: flex;
+    justify-content: space-between;
+}
+.fancy-card .content .read-more a {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    line-height: 32px;
+    font-weight: 700;
+    gap: 10px;
+    color: #23262D;
+    display: flex;
+    align-items: center;
+} 
+.fancy-card:hover {
+    transition: all 0.5s ease-out;
+    border-color: transparent;
+    background-color: #ffffff;
+    box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.05);
+    top: -5px;
+} 
+.fancy-card .content .read-more a:hover i {
+    color: #D9A14C;
+    transition: all 0.5s ease-out;
+} 
+.fancy-card:hover .icon-wrapper .icon img {
+    transition: all 0.5s ease-out;
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+}
+
+
+/* --=========================== Subscribe Form Module ============================-- */ 
+.subscribe-form-widget {
+    padding: 0 74px;
+    margin-top: -6px;
+}
+.subscribe-form-widget .mc4wp-form-fields {
+    border-radius: 0;
+    gap: 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.subscribe-form-widget .mc4wp-form-fields {
+    display: flex;
+    background-color: transparent;
+    overflow: hidden;
+}
+.subscribe-form-widget .single-field {
+    flex-grow: 1;
+}
+.subscribe-form-widget .single-field input {
+    border: 1px solid #E3E3E3;
+    color: #23262D;
+    padding: 0 20px;
+}
+
+.subscribe-form-widget .submit-btn {
+    padding: 14px 24px;    
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 1.28px;
+}
+
+.subscribe-form-widget .submit-btn:hover{
+    border: 1px solid #E3E3E3;
+}
+
+
+/* --============================== Brand Marquee Module ================================-- */ 
+
+.brand-marquee-section {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 40px;
+    padding: 120px 0;
+}
+.brand-marquee-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.brand-marquee-wrapper.first-brand-marquee {
+    animation: Scroll 32s linear infinite;
+}
+.brand-marquee-wrapper .single-brand-marquee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-shrink: 0;
+}
+.brand-marquee-wrapper .single-brand-marquee .brand-marquee-title {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 78px;
+    color: #23262D;
+    white-space: nowrap;
+}
+/* Marquee Animation */
+@keyframes Scroll {
+  0% {
+    transform: translateX(-50vw);
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(50vw);
+    transform: translateX(50vw);
+  }
+
 }
